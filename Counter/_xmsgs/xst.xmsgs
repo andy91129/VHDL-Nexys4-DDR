@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="871" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 17: Using initial value <arg fmt="%s" index="1">&quot;11000011010100000&quot;</arg> for <arg fmt="%s" index="2">prescaler</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 33: <arg fmt="%s" index="1">rst</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 31: Assignment to <arg fmt="%s" index="1">btn_count_pressed</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 100: <arg fmt="%s" index="1">dout</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 102: <arg fmt="%s" index="1">dout</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 104: <arg fmt="%s" index="1">dout</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 106: <arg fmt="%s" index="1">dout</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 108: <arg fmt="%s" index="1">dout</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 110: <arg fmt="%s" index="1">dout</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 112: <arg fmt="%s" index="1">dout</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="92" delta="old" >"\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 114: <arg fmt="%s" index="1">dout</arg> should be on the sensitivity list of the process
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_an</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_sevenseg</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+</messages>
+

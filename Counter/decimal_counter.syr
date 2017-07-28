@@ -1,0 +1,491 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.47 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.47 secs
+ 
+--> Reading design: decimal_counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "decimal_counter.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "decimal_counter"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : decimal_counter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" into library work
+Parsing entity <decimal_counter>.
+Parsing architecture <Behavioral> of entity <decimal_counter>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <decimal_counter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 17: Using initial value "11000011010100000" for prescaler since it is never assigned
+WARNING:HDLCompiler:92 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 33: rst should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 31: Assignment to btn_count_pressed ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 100: dout should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 102: dout should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 104: dout should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 106: dout should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 108: dout should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 110: dout should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 112: dout should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 114: dout should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 116. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd" Line 143. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <decimal_counter>.
+    Related source file is "\\mac\google drive\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.vhd".
+    Found 32-bit register for signal <i_cnt>.
+    Found 17-bit register for signal <prescaler_counter>.
+    Found 3-bit register for signal <counter>.
+    Found 32-bit adder for signal <n0047> created at line 38.
+    Found 4-bit adder for signal <i_cnt[31]_GND_5_o_add_9_OUT> created at line 59.
+    Found 4-bit adder for signal <i_cnt[27]_GND_5_o_add_11_OUT> created at line 62.
+    Found 4-bit adder for signal <i_cnt[23]_GND_5_o_add_13_OUT> created at line 65.
+    Found 4-bit adder for signal <i_cnt[19]_GND_5_o_add_15_OUT> created at line 68.
+    Found 4-bit adder for signal <i_cnt[15]_GND_5_o_add_17_OUT> created at line 71.
+    Found 4-bit adder for signal <i_cnt[11]_GND_5_o_add_19_OUT> created at line 74.
+    Found 4-bit adder for signal <i_cnt[7]_GND_5_o_add_21_OUT> created at line 77.
+    Found 4-bit adder for signal <i_cnt[3]_GND_5_o_add_23_OUT> created at line 80.
+    Found 17-bit adder for signal <prescaler_counter[16]_GND_5_o_add_35_OUT> created at line 151.
+    Found 3-bit adder for signal <counter[2]_GND_5_o_add_37_OUT> created at line 154.
+    Found 8x8-bit Read Only RAM for signal <an>
+    Found 16x7-bit Read Only RAM for signal <sevenseg>
+    Found 1-bit 8-to-1 multiplexer for signal <reg<3>> created at line 125.
+    Found 1-bit 8-to-1 multiplexer for signal <reg<2>> created at line 125.
+    Found 1-bit 8-to-1 multiplexer for signal <reg<1>> created at line 125.
+    Found 1-bit 8-to-1 multiplexer for signal <reg<0>> created at line 125.
+    Summary:
+	inferred   2 RAM(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred  52 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <decimal_counter> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port Read Only RAM                    : 1
+ 8x8-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 11
+ 17-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 8
+# Registers                                            : 3
+ 17-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 1
+# Multiplexers                                         : 12
+ 1-bit 8-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <decimal_counter>.
+The following registers are absorbed into counter <prescaler_counter>: 1 register on signal <prescaler_counter>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_an> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <counter>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <an>            |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_sevenseg> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <reg>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sevenseg>      |          |
+    -----------------------------------------------------------------------
+Unit <decimal_counter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 8x8-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 9
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 8
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+# Multiplexers                                         : 12
+ 1-bit 8-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <decimal_counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block decimal_counter, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 52
+ Flip-Flops                                            : 52
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : decimal_counter.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 247
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 47
+#      LUT2                        : 8
+#      LUT3                        : 17
+#      LUT4                        : 21
+#      LUT5                        : 13
+#      LUT6                        : 39
+#      MUXCY                       : 47
+#      MUXF7                       : 5
+#      VCC                         : 1
+#      XORCY                       : 45
+# FlipFlops/Latches                : 52
+#      FD                          : 6
+#      FDCE                        : 32
+#      FDE                         : 3
+#      FDR                         : 11
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 2
+#      OBUF                        : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              52  out of  126800     0%  
+ Number of Slice LUTs:                  148  out of  63400     0%  
+    Number used as Logic:               148  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    148
+   Number with an unused Flip Flop:      96  out of    148    64%  
+   Number with an unused LUT:             0  out of    148     0%  
+   Number of fully used LUT-FF pairs:    52  out of    148    35%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    210     8%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 52    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.595ns (Maximum Frequency: 385.416MHz)
+   Minimum input arrival time before clock: 0.736ns
+   Maximum output required time after clock: 2.469ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 2.595ns (frequency: 385.416MHz)
+  Total number of paths / destination ports: 1633 / 66
+-------------------------------------------------------------------------
+Delay:               2.595ns (Levels of Logic = 34)
+  Source:            i_cnt_0 (FF)
+  Destination:       i_cnt_31 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: i_cnt_0 to i_cnt_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.361   0.307  i_cnt_0 (i_cnt_0)
+     INV:I->O              2   0.113   0.000  Madd_n0047_lut<0>_INV_0 (Madd_n0047_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Madd_n0047_cy<0> (Madd_n0047_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<1> (Madd_n0047_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<2> (Madd_n0047_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<3> (Madd_n0047_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<4> (Madd_n0047_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<5> (Madd_n0047_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<6> (Madd_n0047_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<7> (Madd_n0047_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<8> (Madd_n0047_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<9> (Madd_n0047_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<10> (Madd_n0047_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<11> (Madd_n0047_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<12> (Madd_n0047_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<13> (Madd_n0047_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<14> (Madd_n0047_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<15> (Madd_n0047_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<16> (Madd_n0047_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<17> (Madd_n0047_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<18> (Madd_n0047_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<19> (Madd_n0047_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<20> (Madd_n0047_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<21> (Madd_n0047_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<22> (Madd_n0047_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<23> (Madd_n0047_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<24> (Madd_n0047_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<25> (Madd_n0047_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<26> (Madd_n0047_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<27> (Madd_n0047_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<28> (Madd_n0047_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  Madd_n0047_cy<29> (Madd_n0047_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  Madd_n0047_cy<30> (Madd_n0047_cy<30>)
+     XORCY:CI->O           1   0.370   0.295  Madd_n0047_xor<31> (n0047<31>)
+     LUT6:I5->O            1   0.097   0.000  Mmux_i_cnt[31]_i_cnt[31]_mux_24_OUT37 (i_cnt[31]_i_cnt[31]_mux_24_OUT<31>)
+     FDCE:D                    0.008          i_cnt_31
+    ----------------------------------------
+    Total                      2.595ns (1.992ns logic, 0.603ns route)
+                                       (76.8% logic, 23.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              0.736ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       i_cnt_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: rst to i_cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            32   0.001   0.386  rst_IBUF (rst_IBUF)
+     FDCE:CLR                  0.349          i_cnt_0
+    ----------------------------------------
+    Total                      0.736ns (0.350ns logic, 0.386ns route)
+                                       (47.5% logic, 52.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 388 / 15
+-------------------------------------------------------------------------
+Offset:              2.469ns (Levels of Logic = 4)
+  Source:            counter_1 (FF)
+  Destination:       sevenseg<6> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: counter_1 to sevenseg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             18   0.361   0.772  counter_1 (counter_1)
+     LUT6:I0->O            1   0.097   0.000  Mmux_reg<0>_3 (Mmux_reg<0>_3)
+     MUXF7:I1->O           7   0.279   0.584  Mmux_reg<0>_2_f7 (reg<0>)
+     LUT4:I0->O            1   0.097   0.279  Mram_sevenseg41 (sevenseg_4_OBUF)
+     OBUF:I->O                 0.000          sevenseg_4_OBUF (sevenseg<4>)
+    ----------------------------------------
+    Total                      2.469ns (0.834ns logic, 1.635ns route)
+                                       (33.8% logic, 66.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    2.595|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 66.00 secs
+Total CPU time to Xst completion: 65.84 secs
+ 
+--> 
+
+Total memory usage is 482332 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

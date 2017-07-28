@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=W:\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.ncd
+OUTFILE=W:\New York University\Advance_Hardware_Design\ISE_project\Counter\decimal_counter.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=W:\New York University\Advance_Hardware_Design\ISE_project\Counter
+LICENSE=WebPack
+USER_INFO=210902713_0_0_332

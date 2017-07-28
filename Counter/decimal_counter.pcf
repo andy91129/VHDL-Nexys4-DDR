@@ -1,0 +1,47 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Jul 17 17:49:00 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "J17" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "J18" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "T9" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "J14" LEVEL 1;
+COMP "an<4>" LOCATE = SITE "P14" LEVEL 1;
+COMP "an<5>" LOCATE = SITE "T14" LEVEL 1;
+COMP "an<6>" LOCATE = SITE "K2" LEVEL 1;
+COMP "an<7>" LOCATE = SITE "U13" LEVEL 1;
+COMP "sevenseg<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "sevenseg<1>" LOCATE = SITE "T11" LEVEL 1;
+COMP "sevenseg<2>" LOCATE = SITE "P15" LEVEL 1;
+COMP "sevenseg<3>" LOCATE = SITE "K13" LEVEL 1;
+COMP "sevenseg<4>" LOCATE = SITE "K16" LEVEL 1;
+COMP "sevenseg<5>" LOCATE = SITE "R10" LEVEL 1;
+COMP "sevenseg<6>" LOCATE = SITE "T10" LEVEL 1;
+COMP "btnc" LOCATE = SITE "N17" LEVEL 1;
+PIN btnc_pin<0> = BEL "btnc" PINNAME PAD;
+PIN "btnc_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "clock" LOCATE = SITE "E3" LEVEL 1;
+COMP "rst" LOCATE = SITE "M18" LEVEL 1;
+PIN rst_pin<0> = BEL "rst" PINNAME PAD;
+PIN "rst_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+TIMEGRP clock = BEL "i_cnt_0" BEL "i_cnt_1" BEL "i_cnt_2" BEL "i_cnt_3" BEL
+        "i_cnt_4" BEL "i_cnt_5" BEL "i_cnt_6" BEL "i_cnt_7" BEL "i_cnt_8" BEL
+        "i_cnt_9" BEL "i_cnt_10" BEL "i_cnt_11" BEL "i_cnt_12" BEL "i_cnt_13"
+        BEL "i_cnt_14" BEL "i_cnt_15" BEL "i_cnt_16" BEL "i_cnt_17" BEL
+        "i_cnt_18" BEL "i_cnt_19" BEL "i_cnt_20" BEL "i_cnt_21" BEL "i_cnt_22"
+        BEL "i_cnt_23" BEL "i_cnt_24" BEL "i_cnt_25" BEL "i_cnt_26" BEL
+        "i_cnt_27" BEL "i_cnt_28" BEL "i_cnt_29" BEL "i_cnt_30" BEL "i_cnt_31"
+        BEL "prescaler_counter_6" BEL "prescaler_counter_7" BEL
+        "prescaler_counter_8" BEL "prescaler_counter_9" BEL
+        "prescaler_counter_10" BEL "prescaler_counter_11" BEL
+        "prescaler_counter_12" BEL "prescaler_counter_13" BEL
+        "prescaler_counter_14" BEL "prescaler_counter_15" BEL
+        "prescaler_counter_16" BEL "counter_0" BEL "counter_1" BEL "counter_2"
+        BEL "prescaler_counter_0" BEL "prescaler_counter_1" BEL
+        "prescaler_counter_2" BEL "prescaler_counter_3" BEL
+        "prescaler_counter_4" BEL "prescaler_counter_5" BEL
+        "clock_BUFGP/BUFG";
+TS_clock = PERIOD TIMEGRP "clock" 50 MHz HIGH 50%;
+SCHEMATIC END;
+
